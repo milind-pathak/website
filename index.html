@@ -14,13 +14,22 @@
             align-items: center;
             height: 100vh;
             background-color: #222;
-            background: url('https://github.com/milind-pathak/website/blob/main/giphy.gif') no-repeat center center fixed;
-            background-size: cover;
         }
         
         .container {
             text-align: center;
             color: white;
+        }
+
+        .backgroundgif {
+            width: 100%;
+            max-width: 800px;
+            animation: nlights 10s linear infinite;
+        }
+        
+        @keyframes nlights {
+            0% { background-position: 0 0; }
+            100% { background-position: -4800px 0; }
         }
         
         /* Adjust the badge container's size as needed */
@@ -31,6 +40,7 @@
 </head>
 <body>
     <div class="container">
+        <div class="backgroundgif" style="background: url('https://github.com/milind-pathak/website/blob/main/giphy.gif')"></div>
         <!-- Paste the LinkedIn profile badge code below -->
         <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="milindpathak9" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/milindpathak9?trk=profile-badge"></a></div>
             <!-- Paste the LinkedIn profile badge code here -->
